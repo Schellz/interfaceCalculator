@@ -1,7 +1,8 @@
 const display = document.querySelector('#display');
 const buttons = document.querySelectorAll('button');
-buttons.forEach((item) =>{
-    if(item.id == 'clear'){
+buttons.forEach((item) => {
+  item.onclick = () => {
+    if (item.id == 'clear'){
         display.innerText = '';
     }else if (item.id == 'backspace'){
         let string = display.innerText.toString();
@@ -11,9 +12,9 @@ buttons.forEach((item) =>{
     }else if (display.innerText == '' && item.id == 'equal'){
         display.innerText = 'Empty!';
         setTimeout(() => (display.innerText = ''), 2000);
-    }else{
+    }else {
         display.innerText += item.id;
-}}    )
+    }       }   })
     const themeToggleBtn = document.querySelector('.theme-toggler');
     const calculator = document.querySelector('.dark');
     const toggleIcon = document.querySelector('.toggler-icon');

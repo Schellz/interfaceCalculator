@@ -40,7 +40,7 @@ body{
 .theme-toggler.active{
     color: #333;
 }
-.theme-toggler::before{
+.theme-toggler.active::before{
     background-color: #fff;
 }
 .theme-toggler::before{
@@ -128,6 +128,6 @@ button#equal{
     background-color: #2e1f39;
     color: #aa00a4;
 }
-.calculator button.btn-equal{
+.calculator.dark button.btn-equal{
     background-color: #223323;
 }    
